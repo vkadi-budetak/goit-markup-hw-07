@@ -56,6 +56,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-open-modalka-mob"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -558,12 +567,12 @@
         >
           <p class="footer-headline">Subscribe</p>
           <div class="footer-form-box">
-              <input
-                class="footer-form-mail"
-                type="email"
-                name="user_email"
-                value="E-mail"
-              />
+            <input
+              class="footer-form-mail"
+              type="email"
+              name="user_email"
+              value="E-mail"
+            />
             <button class="footer-form-btn" type="button">
               <span class="footer-form-txt">Subscribe</span>
               <svg class="footer-form-svg" width="24" height="24">
@@ -653,6 +662,107 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class=""
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="./images/icons.svg#icon-close"
+          width="8"
+          height="8"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-title">
+          <a class="mobail-link current link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-title">
+          <a class="link" href="">Products</a>
+        </li>
+        <li class="mobile-menu-title">
+          <a class="link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-list">
+          <a class="mobile-number link" href="tell">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-mail-list">
+          <a class="mobile-mail link" href="mailto">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferre"
+            aria-label="Instagram icon"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferre"
+            aria-label="Twitter icon"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferre"
+            aria-label="Facebook icon"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferre"
+            aria-label="Linkedin icon"
+          >
+            <svg class="socials-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
