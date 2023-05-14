@@ -241,6 +241,7 @@ footer .logo {
 @media only screen and (min-width: 1158px) {
   .header-contakts {
     display: flex;
+    flex-direction: row;
     margin: auto;
     gap: 40px;
   }
@@ -462,7 +463,7 @@ footer .logo {
 }
 @media only screen and (max-width: 767px) {
   .section_items {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 }
 
@@ -1062,6 +1063,12 @@ footer .logo {
   /* display: flex;
   gap: 24px; */
 }
+
+@media only screen and (max-width: 427px) {
+  .footer-form-box {
+      width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .footer-form-box {
     display: flex;
@@ -1093,7 +1100,7 @@ footer .logo {
 }
 @media only screen and (max-width: 427px) {
   .footer-form-mail {
-    width: auto;
+    width: 100%;
     /* margin-bottom: 16px; */
   }
 }
@@ -1178,9 +1185,7 @@ footer .logo {
 .modal {
   position: absolute;
   top: 80px;
-  /* left: calc(50% - 204px); */
-  transform: translate(-50%)
-  
+  /* transform: translate(-50%); */
 
   width: 408px;
   max-width: 100%;
@@ -1191,6 +1196,12 @@ footer .logo {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media only screen and (min-width: 428px) {
+  .modal  {
+    left: calc(50% - 204px);
+  }
 }
 
 .modal-button {
